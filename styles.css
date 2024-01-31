@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
 :root{
-  --clr-text: #171717;
+  --clr-text: rgb(23, 23, 23);
   --clr-links: rgb(46, 130, 214);
   --clr-links-hover: rgb(22, 103, 184);
-  --clr-body-bg: #eeeef4;
+  --clr-texture-bg: rgb(238, 238, 244);
+  --clr-body-bg: rgb(229, 229, 247);
 }
 
 body {
@@ -12,7 +15,7 @@ body {
   border: 0;
   padding: 0;
   font-family: Roboto, system-ui;
-  background-color: #e5e5f7;
+  background-color: var(--clr-body-bg);
   background-image: linear-gradient(
       135deg,
       rgba(68, 77, 247, 0.027) 25%,
@@ -20,7 +23,7 @@ body {
     ),
     linear-gradient(225deg, hwb(237 27% 3% / 0.007) 25%, transparent 25%),
     linear-gradient(45deg, #444df704 25%, transparent 25%),
-    linear-gradient(315deg, #444df703 25%, var(--clr-body-bg) 25%);
+    linear-gradient(315deg, #444df703 25%, var(--clr-texture-bg) 25%);
   background-position: 4px 0, 4px 0, 0 0, 0 0;
   background-size: 4px 4px;
   background-repeat: repeat;
