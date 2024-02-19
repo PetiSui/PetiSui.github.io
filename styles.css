@@ -8,6 +8,13 @@
   --clr-body-bg: rgb(229, 229, 247);
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 body {
   min-height: 100%;
   width: auto;
@@ -27,6 +34,16 @@ body {
   background-position: 4px 0, 4px 0, 0 0, 0 0;
   background-size: 4px 4px;
   background-repeat: repeat;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.app > main {
+  flex: 1;
 }
 
 a {
@@ -326,7 +343,7 @@ img {
   font-style: italic;
   font-weight: 500;
   font-size: 1.3rem;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .lightblue {
